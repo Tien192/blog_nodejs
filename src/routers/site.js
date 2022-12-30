@@ -5,8 +5,8 @@ const siteControllers = require('..\\app\\controllers\\SiteController');
 
 // newsControllers.index
 
-router.use('/search',siteControllers.search);
-router.use('/',siteControllers.index);
+router.get('/search',siteControllers.search);
+router.get('/',siteControllers.index);
 
 
 
